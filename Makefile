@@ -9,7 +9,8 @@
 #    (this increases performance and avoids hard-to-debug behaviour);
 # o  print "Entering directory ...";
 MAKEFLAGS += -rR --no-print-directory
-
+export CROSS_COMPILE=arm-linux-gnueabi-
+export ARCH=arm
 TOPDIR=$(shell pwd)
 
 CONFIG_CONFIG_IN=Config.in
